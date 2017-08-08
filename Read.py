@@ -6,10 +6,8 @@ import MFRC522
 import signal
 import requests
 import time
-# import json
 import os
 import base64
-# import csv
 import sqlite3
 
 
@@ -46,7 +44,7 @@ def sendHandshake(tagid):
                   ],
                   "title": [
                       {
-                          "value": "from Pi 1"
+                          "value": "From Pi for user " + username
                       }
                   ],
                   "field_object_id": [
