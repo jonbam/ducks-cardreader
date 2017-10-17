@@ -65,7 +65,7 @@ def sendHandshake(tagid):
         print response.status_code
         return True
     except requests.exceptions.HTTPError as err:
-        print "Error: " + response.status_code
+        print "Error: %s" % response.status_code
         return False
 
 # Begin continuous loop
